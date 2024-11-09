@@ -1,219 +1,24 @@
-/* styles/styles.css */
-
-.background {
-
-  background-color: #033e75;
-  background-image: linear-gradient(43deg, #474953 0%, #3b7c1d 46%, #af7200 100%);
-  opacity: 4;
-  } 
-
-/* Basic reset for the page */
-
+/* General Reset and Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Container for the jobs page */
-  .jobs-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading style */
-  .jobs-container h1 {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  /* Style for job cards */
-  .job-card {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .job-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .job-card p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* styles/styles.css */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-/* Footer Styles */
-
-/* Ensure the body and html take full height of the page */
 html, body {
-  height: 100%; /* Ensure the page takes full height */
-  margin: 0; /* Remove default margin */
+  height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column; /* Stack child elements vertically */
+  flex-direction: column;
 }
 
-/* Main content area (should take the remaining space) */
+/* Container for Main Content */
 main {
-  flex: 1; /* This takes up the available space and pushes footer down */
+  flex: 1;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #f8f8f8; /* Background color for the footer */
-  padding: 1rem; /* Padding around the footer */
-  text-align: center; /* Center text */
-  width: 100%; /* Make sure footer spans the full width */
-  border-top: 1px solid #ddd; /* Optional: Add a small border on top of footer */
-}
-
-.footer {
-    background-color: black;  /* Black background */
-    color: white;             /* White text */
-    padding: 20px;            /* Padding on all sides */
-    text-align: center;       /* Center-align the text */
-    font-size: 1rem;          /* Font size for the text */
-  }
-  
-  .footer p {
-    margin: 0;                /* Remove default margin */
-  }
-  
-  /* styles/styles.css */
-
-/* Body and general layout styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Container for the entire skills page */
-  .skills-container {
-    padding: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading for the skills page */
-  .skills-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  /* List of skills categories */
-  .skills-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  /* Individual skill category */
-  .skill-category {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Category title styles */
-  .category-title {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  /* Skill items */
-  .skills {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .skills li {
-    font-size: 1.2rem;
-    color: #555;
-    padding: 5px 0;
-  }
-  
-  .skills li::before {
-    content: "• ";  /* Adds a bullet point before each item */
-    color: #007bff;
-    
-}
-  
-  /* styles/styles.css */
-
-/* Basic reset for the page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  /* Container for the contact page */
-  .contact-container {
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading for the contact page */
-  .contact-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  /* Contact information container */
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  /* Individual contact item */
-  .contact-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-item h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .contact-item p {
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
- /* styles/style.css */
+/* Navbar Styles */
 .navbar {
   background-color: #000000; /* Background color */
   color: #ffffff; /* Text color */
@@ -243,30 +48,107 @@ body {
   color: #ffffff; /* Black text for links */
 }
 
-.about-container {
-  margin:270px;
-  font-size: 30px;
-  font-weight: 700;
-  
+/* Page Containers */
+.jobs-container, .skills-container, .contact-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.skills-container {
+  max-width: 1000px;
+}
+
+.jobs-container h1, .skills-heading, .contact-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.job-card, .skill-category, .contact-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-card h2, .category-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-card p, .contact-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  color: #555;
+  padding: 5px 0;
+}
+
+.skills li::before {
+  content: "• ";  /* Adds a bullet point before each item */
+  color: #007bff;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: black;  /* Black background */
+  color: white;             /* White text */
+  padding: 20px;            /* Padding on all sides */
+  text-align: center;       /* Center-align the text */
+  font-size: 1rem;          /* Font size for the text */
+  border-top: 1px solid #ddd; /* Optional: Add a small border on top of footer */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Specific Page Styles */
 .jobs {
-  
   background-color: #033e75;
   background-image: linear-gradient(43deg, #474953 0%, #3b7c1d 46%, #af7200 100%);
   opacity: 4;
-  margin:76px;
+  margin: 76px;
 }
-.contact {
-  margin:76px;
-}
-.about {
 
+.contact {
+  margin: 76px;
+}
+
+.about {
   background-color: #033e75;
   background-image: linear-gradient(43deg, #474953 0%, #3b7c1d 46%, #af7200 100%);
   opacity: 2;
-  
 }
 
+.about-container {
+  margin: 270px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Media Queries for Responsiveness */
 
 /* Large Desktop: (1200px and up) */
 @media (min-width: 1200px) {
@@ -286,4 +168,3 @@ body {
     gap: 2rem; /* More space between links */
   }
 }
-
