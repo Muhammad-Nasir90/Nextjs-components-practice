@@ -1,10 +1,11 @@
+// components/Footer.js
+import React from 'react';
+import '@/app/styles/style.css'; // Make sure to import your custom CSS
 
-
-export default function Footer () {
+export default function Footer() {
   return (
-    <footer className="bg-black text-white p-4 text-center">
+    <footer className="footer">
       <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
   );
-};
-
+}

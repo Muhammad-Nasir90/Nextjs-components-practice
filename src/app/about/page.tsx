@@ -1,26 +1,30 @@
-export default async function About() {
-    await new Promise((resolve) => {
-        setTimeout(resolve, 5000);
-    });
+// components/About.js
+import React from 'react';
+import '@/app/styles/style.css'; // Import the custom CSS file
 
-    return (
-        <div className="background flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat bg-opacity-50 text-gray-800">
-            <h1 className="p-10 font-semibold font-serif text-3xl underline">
-                
-            </h1>
-            <p className="text-center p-4 text-lg mb-6">
-                Welcome to my website! Here’s a brief summary of what you can find:
-            </p>
-            <ul className="text-center p-4 list-disc list-inside space-y-2">
-                <li>✅ **Component Architecture:** Built with a modular approach for easy maintenance.</li>
-                <li>✅ **Loading State Management:** Enhances user experience during data fetching.</li>
-                <li>✅ **Error Handling:** Informative mechanisms to address any issues.</li>
-                <li>✅ **404 Not Found Statement:** Custom page for non-existent routes.</li>
-                <li>✅ **User-Friendly Design:** Focused on usability and accessibility.</li>
-            </ul>
-            <p className="text-center p-4 text-lg mt-6">
-                Thank you for visiting! I hope you find the content valuable.
-            </p>
-        </div>
-    );
+export default async function About() {
+  // Simulate loading delay (5 seconds)
+  await new Promise((resolve) => {
+    setTimeout(resolve, 5000);
+  });
+
+  return (
+    <div className="about">
+    <div className="about-container">
+      <h1 className="about-heading">About This Website</h1>
+      <p className="about-description">
+        Welcome to my website! Here’s a brief summary of what you can find:
+      </p>
+      <ul className="about-list">
+        <li>✅ <strong>Component Architecture:</strong> Built with a modular approach for easy maintenance.</li>
+        <li>✅ <strong>Loading State Management:</strong> Enhances user experience during data fetching.</li>
+        <li>✅ <strong>404 Not Found Statement:</strong> Custom page for non-existent routes.</li>
+        <li>✅ <strong>User-Friendly Design:</strong> Focused on usability and accessibility.</li>
+      </ul>
+      <p className="about-footer">
+        Thank you for visiting! I hope you find the content valuable.
+      </p>
+    </div>
+    </div>
+  );
 }
